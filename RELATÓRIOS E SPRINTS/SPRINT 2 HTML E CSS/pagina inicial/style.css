@@ -1,4 +1,3 @@
-
 * {
   margin: 0px;
   padding: 0px;
@@ -8,13 +7,13 @@
   color: #fff;
 }
 .header {
-  background-color: #004aad;
+  background-color: #013331;
   padding: 15px;
   text-align: right;
 }
 
 h1 {
-  background-color: #004aad;
+  background-color: #013331;
   padding: 15px;
   text-align: left;
     }
@@ -44,7 +43,7 @@ h1 {
     }
     .menu a:hover {
       background-color: white;
-      color: #004aad;
+      color: #013331;
     }
   
 
@@ -112,10 +111,6 @@ h1 {
   }
   
 
-
-  
-  
-
   .post-comunidade{
       display: flex;
       justify-content: center;
@@ -129,36 +124,38 @@ h1 {
  
 
    .post-comunidade h4{
-      padding: 20px;
+      padding: 10px;
       text-align: left;
-      color: #004aad;
+      color: #013331;
       
     }
+
+
+    .post-comunidade img{
+      display: flex;
+      flex-wrap: wrap;
+      width: 800px;
+      padding: 40px;
+     
+    }
+
     .post-comunidade p{
-      padding: 10px;
+      padding-bottom: 40px;
       text-align: left;
       display: inline-block;
       align-items: center;
-    
+      
     }
 
-    .post-comunidade img{
-      width: 500px;
-      border: px solid #004aad;
-      padding: 20px;
-
-    
-
-    }
    .btn-link{
     text-decoration: none;
-    border-radius: 3px;
+    border-radius: 20px;
     width: 160px;
     text-align: center;
     padding: 20px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 16px;
-    background-color: black;
+    background-color: #013331;
     color: white;
    }
    .btn-link:hover{
@@ -167,15 +164,6 @@ h1 {
 
    }
 
-
-    
-
-
-
-ul {
-  margin: 0px;
-  padding: 0px;
-}
 
 
 #blog {
@@ -194,12 +182,12 @@ ul {
   flex-direction: column;
 }
 .blog span {
-  color: #004aad;;
+  color:#013331;
 }
 
 .blog h3 {
   font-size: 2.4rem;
-  color: #004aad;;
+  color: #013331;
   font-weight: 600;
 }
 
@@ -214,7 +202,7 @@ ul {
 .blog-box {
   width: 350px;
   background-color: black;
-  border: 1px solid #004aad;
+  border: 1px solid #013331;
   margin: 20px;
 }
 
@@ -229,6 +217,7 @@ ul {
   height: 100%;
   object-fit: cover;
   object-position: center;
+  border-radius: 20px;
 }
 
 .blog-text {
@@ -299,21 +288,20 @@ p {
 
 }
 
-
 .footer {
- 
-    clear: both;
-    width: 200%;
-    background-color: #004aad;
-    padding: 15px;
-    text-align: center;
-    
-  }
+
+  clear: both;
+  width: 100%;
+  background-color: #013331;
+  padding: 15px;
+  text-align: center;
   
-  .footer p {
-    color: white;
-    text-align: center;
-    padding: 15px;
-   
-  }
+}
+
+.footer p {
+  color: white;
+  text-align: center;
+  padding: 15px;
+ 
+}
 
