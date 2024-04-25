@@ -2,6 +2,51 @@
     box-sizing: border-box;
 }
 
+
+
+.branco {
+    color: #fff;
+  }
+  .header {
+    background-color: #013331;;
+    padding: 15px;
+    text-align: right;
+  }
+  
+  h1 {
+    background-color:  #013331;;
+    padding: 15px;
+    text-align: left;
+      }
+  
+  
+      a {
+        text-decoration: none;
+        text-align: right;
+        font-weight: bold;
+        color: white;
+      }
+    
+      .post p {
+        margin: 10px 0px;
+      }
+    
+  
+      .menu,
+      .logo {
+        padding: 10px;
+      }
+      .menu a,
+      .menu a:visited {
+        color: white;
+        text-decoration: none;
+        padding: 8px 12px;
+      }
+      .menu a:hover {
+        background-color: white;
+        color:  #013331;;
+      }
+    
 body {
     padding: 0px;
     margin: 0px;
@@ -16,18 +61,22 @@ a {
 
 
 
-.btn {
-    padding: .5re, 1rem;
-    background: #006669;
+.btn-link{
+    text-decoration: none;
+    border-radius: 3px;
+    width: 160px;
+    text-align: center;
+    padding: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    background-color: black;
     color: white;
-    border: 1px solid transparent;
-    border-radius: .25rem;
-}
+   }
+   .btn-link:hover{
 
-.btn:hover {
-    color: white !important;
-    background: #005255;
-}
+    box-shadow: 2px 2px 2px 2px #535252;
+
+   }
 
 .content {
     width: 90%;
@@ -94,3 +143,29 @@ a {
     border: 1px dashed green;
     height: 300px;
 }
+
+
+p {
+    text-align: left;
+  
+  }
+  
+  
+  .footer {
+ 
+    clear: both;
+    width: 100%;
+    background-color:  #013331;;
+    padding: 15px;
+    text-align: center;
+    ;
+    
+  }
+  
+  .footer p {
+    color: white;
+    text-align: center;
+    padding: 15px;
+
+   
+  }
