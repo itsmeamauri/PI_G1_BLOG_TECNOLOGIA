@@ -16,23 +16,57 @@
   text-align: right;
 }
 
+.foto-startup {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+  padding-top: 20px;
+  
+}
+
 .logo {
   margin: 0px;
   position: absolute;
-  bottom: 68%;
+  bottom: 71%;
 }
 
 h1 {
   margin-top: 0px;
   margin-left: 20px;
   border: 0px;
-  background-color: #180133;
+  background-color: #33283f;
   padding: 2px;
   text-align: left;
 }
 
-h2 {
+div.text h2{
+  text-decoration: rgb(19, 19, 32);
+  margin-top: 10px;
+  margin-bottom: 0px;
+  text-indent: 2em;
+  text-align:justify;
+  font-size:  20px;
+}
+
+span {
+  color: rgb(75, 75, 173);
+}
+
+section > h1 {
+  color: white;
   text-align: center;
+}
+
+section#img-equipe {
+  display: flex;
+  /*justify-content: center;*/
+  
+ 
+}
+
+section#logo {
+  background-image: url('./imagem_equipe/logomarca.jpeg');
+  background-repeat: no-repeat;
 }
 
 a {
@@ -42,9 +76,9 @@ a {
   color: white;
 }
 
-.post p {
+/*.post p {
   margin: 10px 0px;
-}
+}*/
 
 .menu,
 .logo {
