@@ -1,0 +1,56 @@
+.branco {
+    color: #fff;
+  }
+  .header {
+    background-color: #013331;
+    padding: 15px;
+    text-align: right;
+  }
+  
+  h1 {
+    background-color: #013331;
+    padding: 15px;
+    text-align: left;
+      }
+  
+  
+      a {
+        text-decoration: none;
+        text-align: right;
+        font-weight: bold;
+        color: white;
+      }
+    
+      .post p {
+        margin: 10px 0px;
+      }
+    
+  
+      .menu,
+      .logo {
+        padding: 10px;
+      }
+      .menu a,
+      .menu a:visited {
+        color: white;
+        text-decoration: none;
+        padding: 8px 12px;
+      }
+      .menu a:hover {
+        background-color: white;
+        color: #013331;
+      }
+  
+  
+  
+  
+  
+  
+      .footer {
+  
+    clear: both;
+    width: 100%;
+    background-color: #013331;
+    padding: 15px;
+    text-align: center;
+      }
