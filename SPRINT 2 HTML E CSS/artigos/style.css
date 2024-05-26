@@ -1,51 +1,59 @@
 * {
-    box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
 
-
-
+body{
+  font-family: "poppins", sans-serif;
+}
 .branco {
-    color: #fff;
-  }
-  .header {
-    background-color: #013331;;
-    padding: 15px;
-    text-align: right;
-  }
+  color: #fff;
+}
+.header {
+  background-color:#102739 ;
+  padding: 0px;
+  text-align: right;
+}
+
+img{
+border-radius: 70%;
+width: 100px;
+height: 100px;
+display: flex;
+margin: 1px 60px;
+padding-bottom: 1px;
+}
+
+h1{
+  background-color: #102739;
+  padding: 15px;
+  text-align: left;
+    }
+
+
+    a {
+      text-decoration: none;
+      text-align: right;
+      font-weight: bold;
+      color: white;
+    }
   
-  h1 {
-    background-color:  #013331;;
-    padding: 15px;
-    text-align: left;
-      }
-  
-  
-      a {
-        text-decoration: none;
-        text-align: right;
-        font-weight: bold;
-        color: white;
-      }
-    
-      .post p {
-        margin: 10px 0px;
-      }
-    
-  
-      .menu,
-      .logo {
-        padding: 10px;
-      }
-      .menu a,
-      .menu a:visited {
-        color: white;
-        text-decoration: none;
-        padding: 8px 12px;
-      }
-      .menu a:hover {
-        background-color: white;
-        color:  #013331;;
-      }
+    .menu,
+    .logo {
+      padding: 1px;
+    }
+    .menu a,
+    .menu a:visited {
+      color: white;
+      text-decoration: none;
+      padding: 4px 12px;
+    }
+    .menu a:hover {
+      background-color: white;
+      color: #102739;
+    }
+
     
 body {
     padding: 0px;
@@ -81,13 +89,13 @@ a {
 .content {
     width: 90%;
     margin: 30px auto;
-    border: 1px solid red;
+    border: 1px solid #013331;;
 }
 
 .content .main-content {
     width: 70%;
     float: left;
-    border: 1px solid blue;
+    border: 1px solid #013331;;
 }
 
 .clearfix::after {
@@ -140,7 +148,7 @@ a {
 .content .sidebar {
     width: 30%;
     float: left;
-    border: 1px dashed green;
+    border: 1px dashed  #102739;
     height: 300px;
 }
 
@@ -155,11 +163,9 @@ p {
  
     clear: both;
     width: 100%;
-    background-color:  #013331;;
-    padding: 15px;
+    background-color:  #102739;
+    padding: 8px;
     text-align: center;
-    ;
-    
   }
   
   .footer p {
@@ -169,3 +175,4 @@ p {
 
    
   }
+
