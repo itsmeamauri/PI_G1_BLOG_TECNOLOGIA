@@ -1,19 +1,41 @@
+
 * {
-  margin: 0px;
+  margin: 10px;
   padding: 0px;
   box-sizing: border-box;
+}
+
+body{
+  font-family: "poppins", sans-serif;
 }
 .branco {
   color: #fff;
 }
 .header {
-  background-color: #013331;
-  padding: 15px;
+  background-color:#102739 ;
+  padding: 0px;
   text-align: right;
 }
 
-h1 {
-  background-color: #013331;
+header img{
+border-radius: 70%;
+width: 100px;
+height: 100px;
+display: flex;
+margin: 1px 60px;
+padding-bottom: 1px;
+}
+ .mobile img{
+  border-radius: 70%;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  margin: 1px 60px;
+  padding-bottom: 1px;
+}
+
+h1{
+  background-color: #102739;
   padding: 15px;
   text-align: left;
     }
@@ -26,24 +48,19 @@ h1 {
       color: white;
     }
   
-    .post p {
-      margin: 10px 0px;
-    }
-  
-
     .menu,
     .logo {
-      padding: 10px;
+      padding: 1px;
     }
     .menu a,
     .menu a:visited {
       color: white;
       text-decoration: none;
-      padding: 8px 12px;
+      padding: 4px 12px;
     }
     .menu a:hover {
       background-color: white;
-      color: #013331;
+      color: #102739;
     }
   
 
@@ -88,6 +105,7 @@ h1 {
       left: 50%;
       transform:translateX(-50%);
       z-index: 1;
+      
   }
   
   .slider-nav a {
@@ -104,67 +122,74 @@ h1 {
   }
   
 
-  h3 {
+
+  h2 {
     padding: 15px;
-    text-align: left;
+    text-align: center;
   
   }
   
-
   .post-comunidade{
       display: flex;
       justify-content: center;
       align-items: center;
       flex-direction: column;
       padding: 40px;
-      border-bottom:  1px solid;
+     
       text-align: center;
       display: flex;
     }
  
+    .post-comunidade img{
+      width: 500px;
+      border: px solid   #102739;
+      padding: 20px;
+    }
 
-   .post-comunidade h4{
-      padding: 10px;
+   .post-comunidade h2{
+      padding: 20px;
       text-align: left;
-      color: #013331;
+      color:   #102739;
       
     }
-
-
-    .post-comunidade img{
-      display: flex;
-      flex-wrap: wrap;
-      width: 800px;
-      padding: 40px;
-     
-    }
-
     .post-comunidade p{
-      padding-bottom: 40px;
+      padding: 80px;
       text-align: left;
       display: inline-block;
       align-items: center;
+      margin-bottom: 80px;
       
+    
     }
+    
+
+    
 
    .btn-link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-decoration: none;
-    border-radius: 20px;
-    width: 160px;
+    border-radius: 3px;
     text-align: center;
     padding: 20px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 16px;
-    background-color: #013331;
     color: white;
+    clear: both;
+    background-color:  #102739;
+    width: 160px;
+    margin: 0 auto;
+  
    }
    .btn-link:hover{
 
     box-shadow: 2px 2px 2px 2px #535252;
 
    }
+ 
 
 
+    
 
 #blog {
   display: flex;
@@ -175,19 +200,14 @@ h1 {
   border-bottom: 1px solid rgba(0, 0, 0, 0, 0.05);
 }
 
-.blog {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
+
 .blog span {
-  color:#013331;
+  color:  #013331;;
 }
 
 .blog h3 {
   font-size: 2.4rem;
-  color: #013331;
+  color:  #013331;;
   font-weight: 600;
 }
 
@@ -202,7 +222,7 @@ h1 {
 .blog-box {
   width: 350px;
   background-color: black;
-  border: 1px solid #013331;
+  border: 1px solid  #013331;;
   margin: 20px;
 }
 
@@ -217,7 +237,6 @@ h1 {
   height: 100%;
   object-fit: cover;
   object-position: center;
-  border-radius: 20px;
 }
 
 .blog-text {
@@ -288,20 +307,21 @@ p {
 
 }
 
+
 .footer {
-
-  clear: both;
-  width: 100%;
-  background-color: #013331;
-  padding: 15px;
-  text-align: center;
-  
-}
-
-.footer p {
-  color: white;
-  text-align: center;
-  padding: 15px;
  
-}
+    clear: both;
+    width: 100%;
+    background-color:  #102739;
+    padding: 8px;
+    text-align: center;
+  }
+  
+  .footer p {
+    color: white;
+    text-align: center;
+    padding: 15px;
+
+   
+  }
 
