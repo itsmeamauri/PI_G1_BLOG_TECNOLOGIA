@@ -67,17 +67,6 @@ nav {
   color: #102739;
   }
 
-
-
-
-
-
-
-
-
-
-
-
 h1 {
   margin: 0px;
   margin-left: 20px;
@@ -87,136 +76,68 @@ h1 {
   text-align: left;
 }
 
-h2{
-  text-decoration: rgb(19, 19, 32);
-  margin: 10px 0px;
-  font-size: 25px;
-  text-indent: 4em;
-}
-
-div.text{
-  margin: 0px 55px 0px 60px;
-  text-indent: 2.5em;
-  font-size: 18px;
-  text-indent: 2em;
-}
-
-.foto-startup {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 40px;
-  margin-left: 30px;
-  margin-right: 30px;
-  padding-top: 20px; 
-}
-
-.img1 {
-  margin-right: 15px;
-  border: 3px solid #102739;
-}
-
-.img2 {
-  margin-right: 15px;
-  border: 3px solid #102739;
-}
-
-.img3 {
-  margin-right: 15px;
-  border: 3px solid #102739;
-}
-
-span {
-  color: rgb(75, 75, 173);
-}
-
-section > h1 {
-  color: white;
+h2 {
+  padding: 15px;
   text-align: center;
-}
+  color:   #102739;
+  margin-top: 100px;
+  margin-bottom: 20px;
+  }
 
-section > div#img-equipe {
-  display: flex;
-  justify-content: center;
-  margin-top: 130px;
-  border: 10vw;
-}
-#logo {
-  width: 1349px;
-}
+  .foto-startup {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+    margin-left: 30px;
+    margin-right: 30px;
+    padding-top: 20px; 
+  }
 
-section#logo {
-  display: inline-block;
+  .img1 {
+    margin-right: 15px;
+    border: 3px solid #102739;
+  }
   
-  height: 600px;
-  background-repeat: no-repeat;
-  background-position: center;
+  .img2 {
+    margin-right: 15px;
+    border: 3px solid #102739;
+  }
+  
+  .img3 {
+    margin-right: 15px;
+    border: 3px solid #102739;
+  }
+  
  
-  background-attachment: fixed;
+.equipe{
+display: flex;
+justify-content: space-evenly;
 }
+.equipe div{
 
-.foto-amauri {
-  border: 3px solid #102739;
-  margin-right: 150px;
-  height: 306px;
+display: column;
+align-items: center;
+justify-content: space-evenly;
+
+
+  }
+  .equipe img{
+height: 100px;
+margin-left: 165px;
+  }
+    
+  .equipe span{
+display: flex;
+margin-left: 165px;
+  }
+.equipe p{
+  margin-right: 15px;
+font-size: 10px;
+display: flex;
+justify-content: space-between;
+margin: 10px;
+margin-bottom: 50px;
 }
-
-.foto-jeferson {
-  border: 3px solid #102739;
-  margin-right: 150px;
-  height: 306px;
-}
-
-.foto-joao {
-  border: 3px solid #102739;
-  height: 306px;
-}
-
-.descricao {
-  display: flex;
-  justify-content: space-between;
-  color: white;
-}
-
-#amuri > p {
-  width: 307px;
-  height: 100px;
-  margin: 10px 0px 0px 65px;
-  padding: 4px 7px;
-  text-align: justify;
-  color: white;
-  background-image: linear-gradient();
-}
-
-#jeferson > p {
-  width: 307px;
-  height: 80px;
-  margin: 10px 0px 0px 5px;
-  padding: 4px 7px;
-  text-align: justify;
-  color: white;
-  background-color: black;
-}
-
-#joao > p {
-  width: 304px;
-  height: 100px;
-  margin: 10px 65px 0px 0px;
-  padding: 4px 7px;
-  text-align: justify;
-  color: white;
-  background-image: linear-gradient();
-}
-
-a {
-  text-decoration: none;
-  text-align: right;
-  font-weight: bold;
-  color: white;
-}
-
-
-
-
 
 
 
