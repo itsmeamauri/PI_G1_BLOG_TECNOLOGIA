@@ -1,32 +1,88 @@
 @charset "UTF-8";
-
 * {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
-}
+  }
 
+body{
+  font-family: "poppins", sans-serif;
+  background-color: beige;
+  }
 .branco {
   color: #fff;
-}
+  }
 
-.header {
-  background-color: #33283f;
-  padding: 20px;
-  text-align: right;
-}
+header {
+  background-color: #102739;
+  }
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid black;
+  }
 
 .logo {
-  margin: 0px;
-  position: absolute;
-  bottom: 71%;
-}
+  display: flex;
+  margin: 1px 40px;
+  }
+
+.logo p{
+  font-size: 20px;
+  color: black;
+  margin-top: 20px;
+  margin-left: 10px;
+  align-items: center;
+  font-family: "poppins", sans-serif;
+  }
+
+.logo img{
+  height: 70px;
+  width: 70px;
+  }
+
+.menu {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  list-style: none;
+  padding: 1rem;
+  margin: 1px 40px;
+  }
+
+.menu a,
+.menu a:visited {
+  text-align: center;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  padding: 4px 12px;
+  }
+
+.menu a:hover {
+  background-color: white;
+  color: #102739;
+  }
+
+
+
+
+
+
+
+
+
+
+
 
 h1 {
   margin: 0px;
   margin-left: 20px;
   border: 0px;
-  background-color: #33283f;
+  background-color: #013331;
   padding: 2px;
   text-align: left;
 }
@@ -56,17 +112,17 @@ div.text{
 
 .img1 {
   margin-right: 15px;
-  border: 3px solid burlywood;
+  border: 3px solid #102739;
 }
 
 .img2 {
   margin-right: 15px;
-  border: 3px solid burlywood;
+  border: 3px solid #102739;
 }
 
 .img3 {
   margin-right: 15px;
-  border: 3px solid burlywood;
+  border: 3px solid #102739;
 }
 
 span {
@@ -90,28 +146,28 @@ section > div#img-equipe {
 
 section#logo {
   display: inline-block;
-  background-image: url('./imagem_equipe/logomarca.jpeg');
+  
   height: 600px;
   background-repeat: no-repeat;
   background-position: center;
-  background-color: #33283f;
+ 
   background-attachment: fixed;
 }
 
 .foto-amauri {
-  border: 3px solid blue;
+  border: 3px solid #102739;
   margin-right: 150px;
   height: 306px;
 }
 
 .foto-jeferson {
-  border: 3px solid blue;
+  border: 3px solid #102739;
   margin-right: 150px;
   height: 306px;
 }
 
 .foto-joao {
-  border: 3px solid blue;
+  border: 3px solid #102739;
   height: 306px;
 }
 
@@ -158,35 +214,24 @@ a {
   color: white;
 }
 
-.menu,
-.logo {
-  padding: 26px;
-  margin: 0px;
-  margin-left: -1%;
-}
 
-.menu a,
-.menu a:visited {
-  color: white;
-  text-decoration: none;
-  padding: 8px 12px;
-}
 
-.menu a:hover {
-  background-color: white;
-  color: #013331;
-}
+
+
+
 
 .footer {
+ 
   clear: both;
   width: 100%;
-  background-color: #013331;
-  padding: 15px;
+  background-color:  #102739;
+  padding: 8px;
   text-align: center;
-}
+  border: 1px solid  black;
+  }
 
 .footer p {
   color: white;
   text-align: center;
   padding: 15px;
-}
+  }
