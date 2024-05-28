@@ -107,6 +107,7 @@ nav {
     left: 50%;
     transform: translateX(-50%);
     z-index: 1;
+    margin: 20px;
   }
   
   .slider-nav a {
@@ -148,6 +149,7 @@ h2 {
   padding: 15px;
   text-align: center;
   color:   #102739;
+  margin-top: 100px;
   }
 
 .post-comunidade h2{
