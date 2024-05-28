@@ -1,49 +1,70 @@
 * {
-    box-sizing: border-box;
-}
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  }
 
+body{
+  font-family: "Poppins", sans-serif;
+  background-color: beige;
+  }
 .branco {
-    color: #fff;
+  color: #fff;
   }
-  .header {
-    background-color: #013331;
-    padding: 15px;
-    text-align: right;
+
+header {
+  background-color: #102739;
   }
-  
-  h1 {
-    background-color: #013331;
-    padding: 15px;
-    text-align: left;
-      }
-  
-  
-      a {
-        text-decoration: none;
-        text-align: right;
-        font-weight: bold;
-        color: white;
-      }
-    
-      .post p {
-        margin: 10px 0px;
-      }
-    
-  
-      .menu,
-      .logo {
-        padding: 10px;
-      }
-      .menu a,
-      .menu a:visited {
-        color: white;
-        text-decoration: none;
-        padding: 8px 12px;
-      }
-      .menu a:hover {
-        background-color: white;
-        color: #013331;
-      }
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid black;
+  }
+
+.logo {
+  display: flex;
+  margin: 1px 40px;
+  }
+
+.logo p{
+  font-size: 20px;
+  color: black;
+  margin-top: 20px;
+  margin-left: 10px;
+  align-items: center;
+  font-family: "poppins", sans-serif;
+  }
+
+.logo img{
+  height: 70px;
+  width: 70px;
+  }
+
+.menu {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  list-style: none;
+  padding: 1rem;
+  margin: 1px 40px;
+  }
+
+.menu a,
+.menu a:visited {
+  text-align: center;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  padding: 4px 12px;
+  }
+
+.menu a:hover {
+  background-color: white;
+  color: #102739;
+  }
 
 body {
     padding: 0px;
@@ -56,8 +77,6 @@ a {
     text-decoration: none;
     color: inherit;
 }
-
-
 
 .btn {
     padding: .5re, 1rem;
@@ -75,19 +94,26 @@ a {
 .content {
     width: 90%;
     margin: 30px auto;
-    border: 1px solid red;
+    display: flex;
+    justify-content: center;
 }
 
 .content .main-content {
     width: 70%;
     float: left;
-    border: 1px solid blue;
 }
 
 .clearfix::after {
     content: '';
     display: block;
     clear: both;
+}
+
+.recent-post-title {
+  display: flex;
+  justify-content: center;
+  color: black;
+  padding: 10px;
 }
 
 .content .main-content .post {
@@ -103,14 +129,14 @@ a {
     position: absolute;
     bottom: 10px;
     right: 10px;
-    border: 1px solid #005255;
+    border: 1px solid #102739;
     background: transparent;
     border-radius: 0px;
-    color: #005255 !important;
+    color: #102739 !important;
 }
 
 .content .main-content .post .read-more:hover {
-    background: #006669;
+    background: #102739;
     color: white !important;
     transition: .25s;
 }
@@ -131,32 +157,22 @@ a {
     margin: 20px;
 }
 
-.content .sidebar {
-    width: 30%;
-    float: left;
-    border: 1px dashed green;
-    height: 300px;
-}
-
-
 p {
     text-align: left;
-  
   }
   
-  .footer {
+
+.footer {
+  clear: both;
+  width: 100%;
+  background-color:  #102739;
+  padding: 8px;
+  text-align: center;
+  border: 1px solid  black;
+}
   
-    clear: both;
-    width: 100%;
-    background-color: #013331;
-    padding: 15px;
-    text-align: center;
-    
-  }
-  
-  .footer p {
-    color: white;
-    text-align: center;
-    padding: 15px;
-   
-  }
+.footer p {
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
