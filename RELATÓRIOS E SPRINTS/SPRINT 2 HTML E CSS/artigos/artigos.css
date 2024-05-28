@@ -1,49 +1,71 @@
 * {
-    box-sizing: border-box;
-}
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  }
 
+body{
+  font-family: "poppins", sans-serif;
+  background-color: beige;
+  }
 .branco {
-    color: #fff;
+  color: #fff;
   }
-  .header {
-    background-color: #013331;
-    padding: 15px;
-    text-align: right;
+
+header {
+  background-color: #102739;
   }
-  
-  h1 {
-    background-color: #013331;
-    padding: 15px;
-    text-align: left;
-      }
-  
-  
-      a {
-        text-decoration: none;
-        text-align: right;
-        font-weight: bold;
-        color: white;
-      }
-    
-      .post p {
-        margin: 10px 0px;
-      }
-    
-  
-      .menu,
-      .logo {
-        padding: 10px;
-      }
-      .menu a,
-      .menu a:visited {
-        color: white;
-        text-decoration: none;
-        padding: 8px 12px;
-      }
-      .menu a:hover {
-        background-color: white;
-        color: #013331;
-      }
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid black;
+  }
+
+.logo {
+  display: flex;
+  margin: 1px 40px;
+  }
+
+.logo p{
+  font-size: 20px;
+  color: black;
+  margin-top: 20px;
+  margin-left: 10px;
+  align-items: center;
+  font-family: "poppins", sans-serif;
+  }
+
+.logo img{
+  height: 70px;
+  width: 70px;
+  }
+
+.menu {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  list-style: none;
+  padding: 1rem;
+  margin: 1px 40px;
+  }
+
+.menu a,
+.menu a:visited {
+  text-align: center;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  padding: 4px 12px;
+  }
+
+.menu a:hover {
+  background-color: white;
+  color: #102739;
+  }
+
 
 body {
     padding: 0px;
@@ -97,6 +119,7 @@ a {
     border-radius: 5px;
     background: white;
     position: relative;
+    align-items: start;
 }
 
 .content .main-content .post .read-more {
@@ -116,8 +139,8 @@ a {
 }
 
 .content .main-content .post .post-image {
-    width: 40%;
-    height: 100%;
+    width: 100%;
+    height: 50%;
     float: left;
 }
 
@@ -144,19 +167,19 @@ p {
   
   }
   
+
   .footer {
-  
+ 
     clear: both;
     width: 100%;
-    background-color: #013331;
-    padding: 15px;
+    background-color:  #102739;
+    padding: 8px;
     text-align: center;
-    
-  }
+    border: 1px solid  black;
+    }
   
   .footer p {
     color: white;
     text-align: center;
     padding: 15px;
-   
-  }
+    }

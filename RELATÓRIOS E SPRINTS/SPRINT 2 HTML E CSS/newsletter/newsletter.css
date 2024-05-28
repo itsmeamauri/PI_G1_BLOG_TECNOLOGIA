@@ -1,28 +1,90 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&family=Poppins:wght@400;500;600&display=swap');
 
 * {
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
-}
+  }
+
+body{
+  font-family: "poppins", sans-serif;
+  background-color: beige;
+  }
+.branco {
+  color: #fff;
+  }
+
+header {
+  background-color: #102739;
+  }
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid black;
+  }
+
+.logo {
+  display: flex;
+  margin: 1px 40px;
+  }
+
+.logo p{
+  font-size: 20px;
+  color: black;
+  margin-top: 20px;
+  margin-left: 10px;
+  align-items: center;
+  font-family: "poppins", sans-serif;
+  }
+
+.logo img{
+  height: 70px;
+  width: 70px;
+  }
+
+.menu {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  list-style: none;
+  padding: 1rem;
+  margin: 1px 40px;
+  }
+
+.menu a,
+.menu a:visited {
+  text-align: center;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  padding: 4px 12px;
+  }
+
+.menu a:hover {
+  background-color: white;
+  color: #102739;
+  }
 
 body {
   margin: 0;
   padding: 0;
-  background: linear-gradient(120deg,#2980b9, #8e44ad);
+ 
   height: 100vh;
   overflow: hidden;
 }
 
 .center {
-  position: absolute;
+  position: relative;;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 400px;
   height: 530px;
-  background: white;
+  background: #102739;
   border-radius: 10px;
   box-shadow: 10px 10px 15px rgba(0,0,0,0.05);
 }
@@ -33,16 +95,18 @@ body {
     padding: 13px;
 }
 
-.center h1 {
+.center h2 {
   font-size: 20px;
   text-align: center;
   padding: 13px 0;
   border-bottom: 1px solid silver;
+  color: white;
 }
 
 .center form {
   padding: 0 40px;
   box-sizing: border-box;
+  color: white;
 }
 
 form .txt_field {
@@ -79,19 +143,20 @@ form .txt_field {
   left: 0;
   width: 0%;
   height: 2px;
-  background: #2691d9;
+  background: white;
   transition: .5s;
 }
 
 .txt_field input:focus ~ label,
 .txt_field input:valid ~ label {
   top: -5px;
-  color: #2691d9;
+  color: #102739;
 }
 
 .txt_field input:focus ~ span::before,
 .txt_field input:valid ~ span::before{
   width: 100%;
+  
 }
 
 .center .checkbox {
@@ -103,22 +168,42 @@ form .txt_field {
 
 .checkbox label input {
     margin-right: 10px;
+    
 }
 
 input[type="submit"] {
   width: 100%;
   height: 50px;
   border: 1px solid;
-  background: #2691d9;
+  background: white;
   border-radius: 25px;
   font-size: 18px;
-  color: #e9f4fb;
+  color: #102739;
   font-weight: 700;
   cursor: pointer;
   outline: none;
 }
 
 input[type="submit"]:hover {
-  border-color: #2691d9;
+  border-color: #535252;
   transition: .5s;
+  box-shadow: 2px 2px 2px 2px #535252;
 }
+
+.footer { /* o footer não esta aparecendo e não identifiquei o que está impedindo, mas como na página só tem o formulário,
+   acredito que deva ser alguma teg dele que esta impedindo que ele apareça. ps: Amauri Jr */
+ 
+  clear: both;
+  width: 100%;
+  background-color:  #102739;
+  padding: 8px;
+  text-align: center;
+  border: 1px solid  black;
+  }
+
+.footer p {
+  color: white;
+  text-align: center;
+  padding: 15px;
+  }
+

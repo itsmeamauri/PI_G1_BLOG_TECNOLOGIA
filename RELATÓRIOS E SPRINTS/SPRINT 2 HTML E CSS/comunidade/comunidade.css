@@ -1,56 +1,83 @@
-.branco {
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    }
+  
+  body{
+    font-family: "poppins", sans-serif;
+    background-color: beige;
+    }
+  .branco {
     color: #fff;
-  }
-  .header {
-    background-color: #013331;
-    padding: 15px;
-    text-align: right;
-  }
+    }
   
-  h1 {
-    background-color: #013331;
-    padding: 15px;
-    text-align: left;
-      }
+  header {
+    background-color: #102739;
+    }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid black;
+    }
+  
+  .logo {
+    display: flex;
+    margin: 1px 40px;
+    }
+  
+  .logo p{
+    font-size: 20px;
+    color: black;
+    margin-top: 20px;
+    margin-left: 10px;
+    align-items: center;
+    font-family: "poppins", sans-serif;
+    }
+  
+  .logo img{
+    height: 70px;
+    width: 70px;
+    }
+  
+  .menu {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    list-style: none;
+    padding: 1rem;
+    margin: 1px 40px;
+    }
+  
+  .menu a,
+  .menu a:visited {
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    padding: 4px 12px;
+    }
+  
+  .menu a:hover {
+    background-color: white;
+    color: #102739;
+    }
   
   
-      a {
-        text-decoration: none;
-        text-align: right;
-        font-weight: bold;
-        color: white;
-      }
-    
-      .post p {
-        margin: 10px 0px;
-      }
-    
-  
-      .menu,
-      .logo {
-        padding: 10px;
-      }
-      .menu a,
-      .menu a:visited {
-        color: white;
-        text-decoration: none;
-        padding: 8px 12px;
-      }
-      .menu a:hover {
-        background-color: white;
-        color: #013331;
-    
-      }
-  
-      .container img{
-        width: 1000px;
-        height: auto;
+      .container img {
+        width: 100%;
+        height: 20%; /* definir um tamanho melhor, acredito que da pra melhorar. ps: Amauri Jr.*/
         margin-bottom: 20px auto;
        align-self: center;
-       display: -webkit-flex;
+       display: flexbox;
        justify-content: center;
        align-items: center;
-       
+    }
+    .container p {
+        text-align: center; /*ESSE TEXTO FICARÁ DENTRO DO BANNER, NÃO SERÁ TAG. PS: Amauri Jr*/
     }
 
 
@@ -82,7 +109,7 @@ a {
 
 .btn {
     padding: .5re, 1rem;
-    background: #006669;
+    background: #102739;
     color: white;
     border: 1px solid transparent;
     border-radius: .25rem;
@@ -90,18 +117,18 @@ a {
 
 .btn:hover {
     color: white !important;
-    background: #005255;
+    background: #102739
 }
 
 .content {
     width: 50%;
     margin: 30px auto;
-    border: 1px solid #005255;
+    border: 1px solid #102739;
 }
 
 .content .main-content {
     padding: 20px;
-    border: 1px solid #005255;
+    border: 1px solid #102739;
 }
 
 .clearfix::after {
@@ -123,21 +150,21 @@ a {
     position: absolute;
     bottom: 10px;
     right: 10px;
-    border: 1px solid #005255;
+    border: 1px solid #102739;
     background: transparent;
     border-radius: 0px;
-    color: #005255 !important;
+    color:#102739 !important;
 }
 
 .content .main-content .post .read-more:hover {
-    background: #006669;
-    color: #005255 !important;
+    background: #102739;
+    color: #102739 !important;
     transition: .25s;
 }
 
 .content .main-content .post .post-image {
-    width: 40%;
-    height: 100%;
+    width: 100%;
+    height: 40%;
     float: left;
 }
 
@@ -161,7 +188,7 @@ a {
 /* --------------------------------*/
 .comment-box,
 .post-comment .list {
-    background:#005255;
+    background:##102739;
     border-radius: 6px;
     box-shadow: 0 2px 2px #0002;
 }
@@ -189,9 +216,8 @@ a {
     margin-right: 10px;
     border-radius: 50%;
 }
-
 .comment-session .name {
-    text-transform: uppercase;
+    text-transform: uppercase; /* na página o primeiro e segundo nome estão um a baixo do outro, corrigir isso. ps: amauri */
     font-weight: 500;
 }
 
@@ -232,7 +258,7 @@ a {
 }
 
 .comment-box textarea:focus-visible {
-    box-shadow: inset 0 0 0 1px #013331;
+    box-shadow: inset 0 0 0 1px #102739;
     outline: none;
 }
 
@@ -240,29 +266,28 @@ a {
     float: right;
     padding: 6px 10px;
     border: none;
-    background: #013331;
+    background: #102739;
     color: #eee;
     cursor: pointer;
     border-radius: 3px;
 }
 
 .comment-box .comment-submit:hover {
-    background: #013331;
+    background: #102739;
 }
 
 .footer {
-
+ 
     clear: both;
     width: 100%;
-    background-color: #013331;
-    padding: 15px;
+    background-color:  #102739;
+    padding: 8px;
     text-align: center;
-    
-  }
+    border: 1px solid  black;
+    }
   
   .footer p {
     color: white;
     text-align: center;
     padding: 15px;
-   
-  }
+    }

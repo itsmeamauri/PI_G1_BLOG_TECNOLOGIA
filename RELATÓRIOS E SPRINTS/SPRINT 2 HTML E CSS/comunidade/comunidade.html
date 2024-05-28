@@ -1,30 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./comunidade.css">
-
+  <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+        <title>TECHINSIDER</title>
+        <link rel="stylesheet" type="text/css" href="../comunidade/comunidade.css" media="screen"/>
+        <link rel="shortcut icon" href="/PI_G1_BLOG_TECNOLOGIA/area-decanso-escritorio-google.jpg">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header> <div class="header">
-        <div class="logo"></div>
-        <h1><span class="branco">TECH</span>INSIDER</h1>
-        <div class="menu">
-          <a href="/pagina inicial/index.html">Pagina inicial</a>
-          <a href="/artigos/artigos.html">Artigos</a>
-          <a href="/comunidade/comunidade.html">Comunidade</a>
-          <a href="/newsletter/newsletter.html">Newsletter</a>
-          <a href="/sobre/sobre.html">Sobre</a>
+
+    
+    <header>
+      <nav>
+        <div class="logo">
+          <p><a class="branco">TECH</a>INSIDER</p>
+          <img src="../imagens/logomarca.jpeg" alt="">
         </div>
-      </div>
+        <ul class="menu">
+          <li><a href="../pagina inicial/index.html">Pagina Inicial</a></li>
+          <li><a href="../artigos/artigos.html">Artigos</a></li>
+          <li><a href="../comunidade/comunidade.html">Comunidade</a></li>
+          <li><a href="../newsletter/newsletter.html">Newsletter</a></li>
+          <li><a href="../sobre/sobre.html">Sobre</a></li>
+        </ul>
+      </nav>
     </header>
+
     <section class="container">
         <div class="banner">
           
-            <img id="slide-1" src="/comunidade/banner_ilustração_inicial.png"/>
-    
+            <img id="slide-1" src="../imagens/banner-comunidade.jpg"/>
+    <p>SEJA BEM VINDO(A) A NOSSA COMUNIDADE</p> <!--ESSE TEXTO FICARÁ DENTRO DO BANNER, NÃO SERÁ TAG. PS: Amauri Jr-->
 
          </div>
     
@@ -37,15 +47,15 @@
            
 
             <div class="post">
-                <img src="./logomarca.jpeg" alt="" class="post-image">
+                <img src="../imagens/artigo2.png" alt="" class="post-image">
                 <div class="post-preview">
-                    <h2><a href="">asdhisahidsiadhisahi</a></h2>
+                    <h2><a href="../artigos/manutenção.html">Ambiente de trabalho</a></h2>
                     <i class="far fa-user"> Awa Melvine</i>
                     &nbsp;
                     <i class="far calendar"> Mar 11,2019</i>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                     </p>
-                    <a href="" class="btn read-more">Read More</a>
+                    <a href="../artigos/manutenção.html" class="btn read-more">Leia mais...</a>
                 </div>
             </div>
         </div>
@@ -55,9 +65,9 @@
         <div class="post-comment">
             <div class="list">
                 <div class="user">
-                    <div class="user-image"><img src="./imagens2.0/joaopedro.png" alt="image"></div>
+                    <div class="user-image"><img src="../imagens/joaopedro.png" alt="image"></div>
                     <div class="user-meta">
-                        <div class="name">Joao Pedro</div>
+                        <div class="name">Joao Pedro</div> <!--  na página o primeiro e segundo nome estão um a baixo do outro, corrigir isso. ps: amauri --> 
                         <div class="day"> 1 dia atras</div>
                     </div>
                 </div>
@@ -65,7 +75,7 @@
             </div>
             <div class="list">
                 <div class="user">
-                    <div class="user-image"><img src="./imagens2.0/amauri.png" alt="image"></div>
+                    <div class="user-image"><img src="../imagens/amauri.png" alt="image"></div>
                     <div class="user-meta">
                         <div class="name">Amauri</div>
                         <div class="day"> 1 dia atras</div>
@@ -76,17 +86,18 @@
         </div>
         <div class="comment-box">
             <div class="user">
-                <div class="imagem"><img src="./imagens2.0/joaopedro.png" alt="image"></div>
+                <div class="imagem"><img src="../imagens/joaopedro.png" alt="image"></div>
                 <div class="name">Joao Pedro</div>
             </div>
             <form action="" method="post">
-                <textarea name="comment" id="" cols="30" rows="10" placeholder="Your Massage"></textarea>
-                <button class="comment-submit">Comment</button>
+                <textarea name="comment" id="" cols="30" rows="10" placeholder="Seu comentário"></textarea>
+                <button class="comment-submit">Opinar</button>
             </form>
         </div>
     </div>
 </body>
+
 <div class="footer">
     <p>TECH INSIDER - 2024 - Todos os direitos reservados.</p>
   </div>
-</html>
+  
