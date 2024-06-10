@@ -1,3 +1,13 @@
+/* MENU HAMBURGUER*/
+
+document.getElementById('hamburger').addEventListener('click', function () {
+  document.getElementById('menu').classList.toggle('active');
+}); 
+
+
+
+/* CARROSSEL */
+
 let slider = document.querySelector('.slider');
 
 function adjustSlides() {
@@ -18,3 +28,5 @@ window.onload = function() {
 window.onresize = function() {
   adjustSlides();
 }
+
+

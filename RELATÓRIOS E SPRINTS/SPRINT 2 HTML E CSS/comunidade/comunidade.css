@@ -1,48 +1,58 @@
 * {
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
-    }
+  }
   
-  body{
-    font-family: "poppins", sans-serif;
+  body {
+    font-family: "Poppins", sans-serif;
     background-color: beige;
-    }
+  }
+  
   .branco {
     color: #fff;
-    }
+    font-weight: bold black;
+    
+  }
   
   header {
     background-color: #102739;
-    }
+  }
   
   nav {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; 
+    align-items: center;
     border: 1px solid black;
-    }
+  }
   
   .logo {
     display: flex;
-    margin: 1px 40px;
-    }
-  
-  .logo p{
-    font-size: 20px;
-    color: black;
-    margin-top: 20px;
-    margin-left: 10px;
     align-items: center;
-    font-family: "poppins", sans-serif;
-    }
+    margin: 1px 40px;
+  }
   
-  .logo img{
+  .logo p {
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    margin-left: 10px;
+    font-weight: bold;
+  }
+  
+  .logo img {
     height: 70px;
     width: 70px;
-    }
+  }
+  
+  .hamburger {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    margin-right: 40px;
+  }
   
   .menu {
-    color: white;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -50,148 +60,78 @@
     list-style: none;
     padding: 1rem;
     margin: 1px 40px;
-    }
+  }
   
-  .menu a,
-  .menu a:visited {
+  .menu a {
     text-align: center;
     font-weight: bold;
     color: white;
     text-decoration: none;
     padding: 4px 12px;
-    }
+    margin-top: 100px;
+  }
   
   .menu a:hover {
     background-color: white;
     color: #102739;
+  }
+  
+  @media (max-width: 1020px) { /* escolhi esse tamanho para que o menu não fique 
+    com as palavras escritas uma a baixo da outra. Amauri Jr*/
+    .menu {
+      margin: auto;
+      display: none;
+      flex-direction: column;
+      background-color: #102739;
+      position: absolute;
+      top: 60px;
+      right: 0;
+      width: 100%;
+      text-align: center;
     }
   
-  
-      .container img {
+    .menu.active {
+        display: flex;
+        background-color:#102739;
+        opacity: 0.6;
+        display: flex;
         width: 100%;
-        height: 20%; /* definir um tamanho melhor, acredito que da pra melhorar. ps: Amauri Jr.*/
-        margin-bottom: 20px auto;
-       align-self: center;
-       display: flexbox;
-       justify-content: center;
-       align-items: center;
+        height: auto; /* resolvi o problema de os itens do menu ativo ficarem em cima da barra do cabeçalho. Amauri Jr*/
+        position: absolute;
+        z-index: 10; /* para deixar o menu por cima/ na frente do carrossel
+         deixei o index maior que o index do carrossel. Amauri Jr */
+        margin: 0;
+        margin-top: 14px; /* para que o menu fique junto com a barra do cabeçalho sem espaços. Amauri Jr*/
+        padding:2;
+        box-sizing: border-box;
+        justify-content: center;
+        align-items: center ;
+      /* centralizei o menu hambuguer quando ativado deixei ele com transparencia para ficar harmoniozo com orestante da página. Amauri Jr*/
     }
-    .container p {
-        text-align: center; /*ESSE TEXTO FICARÁ DENTRO DO BANNER, NÃO SERÁ TAG. PS: Amauri Jr*/
+  
+    .hamburger {
+      display: block;
+      color: white;
     }
-
-
-body {
-    box-sizing: border-box;
-    font-size: 14px;
-    background: #e9e9e9;
-    font-family: system-ui;
-}
-
-
-* {
-    box-sizing: border-box;
-}
-
-body {
-    padding: 0px;
-    margin: 0px;
-    background: #f6f6f6;
-    font-family: sans-serif;
-}
-
-a {
-    text-decoration: none;
-    color: inherit;
-}
-
-
-
-.btn {
-    padding: .5re, 1rem;
-    background: #102739;
-    color: white;
-    border: 1px solid transparent;
-    border-radius: .25rem;
-}
-
-.btn:hover {
-    color: white !important;
-    background: #102739
-}
-
-.content {
-    width: 50%;
-    margin: 30px auto;
-    border: 1px solid #102739;
-}
-
-.content .main-content {
-    padding: 20px;
-    border: 1px solid #102739;
-}
-
-.clearfix::after {
-    content: '';
-    display: block;
-    clear: both;
-}
-
-.content .main-content .post {
-    width: 95%;
-    height: 270px;
-    margin: 20px auto;
-    border-radius: 5px;
-    background: white;
-    position: relative;
-}
-
-.content .main-content .post .read-more {
-    position: absolute;
-    bottom: 10px;
-    right: 10px;
-    border: 1px solid #102739;
-    background: transparent;
-    border-radius: 0px;
-    color:#102739 !important;
-}
-
-.content .main-content .post .read-more:hover {
-    background: #102739;
-    color: #102739 !important;
-    transition: .25s;
-}
-
-.content .main-content .post .post-image {
+  }
+  
+  
+  .container img {
     width: 100%;
-    height: 40%;
-    float: left;
+    height: 20%; /* definir um tamanho melhor, acredito que da pra melhorar. ps: Amauri Jr.*/
+    margin-bottom: 20px auto;
+   align-self: center;
+   display: flexbox;
+   justify-content: center;
+   align-items: center;
+}
+.container p {
+    text-align: center; /*ESSE TEXTO FICARÁ DENTRO DO BANNER, NÃO SERÁ TAG. PS: Amauri Jr*/
 }
 
-.content .main-content .post .post-preview {
-    width: 60%;
-    padding: 10px;
-    float: right;
-}
 
-.content .main-content .recent-post-title {
-    margin: 20px;
-}
+/*content clearfix não tem tag correspondente aqui*/
 
-.content .sidebar {
-    width: 30%;
-    float: left;
-    border: 1px dashed green;
-    height: 300px;
-}
-
-/* --------------------------------*/
-.comment-box,
-.post-comment .list {
-    background:##102739;
-    border-radius: 6px;
-    box-shadow: 0 2px 2px #0002;
-}
 
 .comment-session {
     width: 650px;
@@ -225,9 +165,11 @@ a {
     font-size: 12px
 }
 
+
 .post-comment .comment-post {
     padding: 0 0 15px 58px;
 }
+
 
 .comment-box {
     padding: 10px;
@@ -245,7 +187,8 @@ a {
     margin-right: 10px;
     border-radius: 50%;
 }
-
+    
+    
 .comment-box textarea {
     background: #eee;
     width: -webkit-fill-available;
@@ -257,37 +200,23 @@ a {
     box-shadow: 0 0 0 1px #0003;
 }
 
-.comment-box textarea:focus-visible {
-    box-shadow: inset 0 0 0 1px #102739;
-    outline: none;
-}
-
-.comment-box .comment-submit {
-    float: right;
-    padding: 6px 10px;
-    border: none;
-    background: #102739;
-    color: #eee;
-    cursor: pointer;
-    border-radius: 3px;
-}
-
-.comment-box .comment-submit:hover {
-    background: #102739;
-}
-
-.footer {
- 
-    clear: both;
-    width: 100%;
-    background-color:  #102739;
-    padding: 8px;
-    text-align: center;
-    border: 1px solid  black;
-    }
-  
-  .footer p {
-    color: white;
-    text-align: center;
-    padding: 15px;
-    }
+    
+    
+    .footer {
+    
+        margin-top: 100%; /* temporario, só pra manter o footer no final da pagina */
+        clear: both;
+        width: 100%;
+        background-color:  #102739;
+        padding: 8px;
+        text-align: center;
+        border: 1px solid  black;
+        }
+      
+      .footer p {
+        color: white;
+        text-align: center;
+        padding: 15px;
+      
+        }
+    

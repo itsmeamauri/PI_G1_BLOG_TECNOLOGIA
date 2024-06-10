@@ -1,52 +1,58 @@
-
 * {
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
-  }
+}
 
-body{
-  font-family: "poppins", sans-serif;
+body {
+  font-family: "Poppins", sans-serif;
   background-color: beige;
-  }
+}
+
 .branco {
   color: #fff;
-  }
-  .preto p {
-  color: black;
-  }
+  font-weight: bold black;
+  
+}
 
 header {
   background-color: #102739;
-  }
+}
 
 nav {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between; 
+  align-items: center;
   border: 1px solid black;
-  }
+}
 
 .logo {
   display: flex;
-  margin: 1px 40px;
-  }
-
-.logo p{
-  font-size: 20px;
-  color: black;
-  margin-top: 20px;
-  margin-left: 10px;
   align-items: center;
-  font-family: "poppins", sans-serif;
-  }
+  margin: 1px 40px;
+}
 
-.logo img{
+.logo p {
+  font-size: 20px;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  margin-left: 10px;
+  font-weight: bold;
+}
+
+.logo img {
   height: 70px;
   width: 70px;
-  }
+}
+
+.hamburger {
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
+  margin-right: 40px;
+}
 
 .menu {
-  color: white;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -54,97 +60,121 @@ nav {
   list-style: none;
   padding: 1rem;
   margin: 1px 40px;
-  }
+}
 
-.menu a,
-.menu a:visited {
+.menu a {
   text-align: center;
   font-weight: bold;
   color: white;
   text-decoration: none;
   padding: 4px 12px;
-  }
+  margin-top: 100px;
+}
 
 .menu a:hover {
   background-color: white;
   color: #102739;
-  }
-  
+}
 
-  .container {
-    width: 800px;
-    height: 400px;
-    margin: 0 auto;
-    padding: 20px;
-    overflow: hidden;
-  }
-  
-  .slider-wrapper {
-    position: relative;
-    max-width: 100%;
-    height: 100%;
-    overflow: hidden;
-  }
-  
-  .slider {
-    display: flex;
-    box-shadow: 0 1.5rem 0.75rem hsla(0, 0, 0, 0.25);
-    border-radius: 0.5rem;
-  }
-  
-  .slider img {
-    flex: 0 0 500px; 
-    height: 400px; 
-    object-fit: cover;
-    animation: slide 10s infinite;
-  }
-  
-  .slider-nav {
-    display: flex;
-    column-gap: 1rem;
+@media (max-width: 1020px) { /* escolhi esse tamanho para que o menu não fique 
+  com as palavras escritas uma a baixo da outra. Amauri Jr*/
+  .menu {
+    margin: auto;
+    display: none;
+    flex-direction: column;
+    background-color: #102739;
     position: absolute;
-    bottom: 1.25rem;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 1;
-    margin: 20px;
+    top: 60px;
+    right: 0;
+    width: 100%;
+    text-align: center;
   }
-  
-  .slider-nav a {
-    width: 0.5rem;
-    height: 0.5rem;
-    border-radius: 50%;
-    background-color: #fff;
-    opacity: 0.75;
-    transition: opacity ease 250ms;
+
+  .menu.active {
+      display: flex;
+      background-color:#102739;
+      opacity: 0.6;
+      display: flex;
+      width: 100%;
+      height: auto; /* resolvi o problema de os itens do menu ativo ficarem em cima da barra do cabeçalho. Amauri Jr*/
+      position: absolute;
+      z-index: 10; /* para deixar o menu por cima/ na frente do carrossel
+       deixei o index maior que o index do carrossel. Amauri Jr */
+      margin: 0;
+      margin-top: 14px; /* para que o menu fique junto com a barra do cabeçalho sem espaços. Amauri Jr*/
+      padding:2;
+      box-sizing: border-box;
+      justify-content: center;
+      align-items: center ;
+    /* centralizei o menu hambuguer quando ativado deixei ele com transparencia para ficar harmoniozo com orestante da página. Amauri Jr*/
   }
-  
-  .slider-nav a:hover {
-    opacity: 1;
+
+  .hamburger {
+    display: block;
+    color: white;
   }
-  
-  @keyframes slide {
-    0% {
+}
+
+.container {
+  width: 100%;
+  height: 400px;
+  margin: 0 auto;
+  padding: 0px;
+  overflow: hidden;
+}
+
+.slider-wrapper {
+  position: relative;
+  max-width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.slider {
+  position: relative;
+  display: flex;
+  box-shadow: 0 1.5rem 0.75rem hsla(0, 0, 0, 0.25);
+  border-radius: 0.5rem;
+}
+
+.slider img {
+  height: 400px;
+  width: 800px;
+  flex: 0 0 500px;
+  object-fit: cover;
+}
+
+.slider-nav a {
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  background-color: #fff;
+  opacity: 0.75;
+  transition: opacity ease 250ms;
+}
+
+.slider-nav a:hover {
+  opacity: 1;
+}
+
+@keyframes slide {
+  0% {
       transform: translateX(0);
-    }
-    25% {
-      transform: translateX(-100%);
-    }
-    50% {
-      transform: translateX(-200%);
-    }
-    75% {
-      transform: translateX(-300%);
-    }
-    100% {
-      transform: translateX(-400%);
-    }
   }
-  
+  100% {
+      transform: translateX(-50%); /* Move metade do tamanho da imagem para a esquerda */
+  }
+}
+
+/* Adiciona a animação de slide */
+.slider {
+  animation: slide 10s linear infinite;
+}
 
 .post-comunidade{
   display: flex;
-  }
+}
+
 h2 {
   padding: 15px;
   text-align: center;
@@ -315,4 +345,3 @@ p {
     text-align: center;
     padding: 15px;
     }
-
