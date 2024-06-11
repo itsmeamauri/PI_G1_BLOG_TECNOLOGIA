@@ -6,7 +6,7 @@
 
 body {
   font-family: "Poppins", sans-serif;
-  background-color: beige;
+  background-color:whitesmoke;
 }
 
 .branco {
@@ -76,7 +76,7 @@ nav {
   color: #102739;
 }
 
-@media (max-width: 1020px) { /* escolhi esse tamanho para que o menu não fique 
+@media (max-width: 1030px) { /* escolhi esse tamanho para que o menu não fique 
   com as palavras escritas uma a baixo da outra. Amauri Jr*/
   .menu {
     margin: auto;
@@ -166,170 +166,204 @@ nav {
   }
 }
 
-/* Adiciona a animação de slide */
 .slider {
   animation: slide 10s linear infinite;
 }
+#comunidade {
 
-.post-comunidade{
-  display: flex;
+  width: 95%;
+  margin: auto;
+  padding: 20px;
 }
 
-h2 {
-  padding: 15px;
+#comunidade h2 {
+  max-width: 1245px;
   text-align: center;
-  color:   #102739;
-  margin-top: 100px;
-  }
-
-.post-comunidade h2{
-    padding: 20px;
-    text-align: left;
-    color:   #102739;
-    }
-.post-comunidade p{
-    padding: 40px;
-    text-align: left;
-    align-items: center;
-    margin-bottom: 80px;
-    }
-
-.btn-link{
-  display: flex;
-  align-items: center;;
-  justify-content: center;
-  text-decoration: none;
-  border-radius: 3px;
-  text-align: center;
+  margin-top: 20px;
+  color: #102739;
+  background-color:whitesmoke;
+  border: solid #102739;
   padding: 20px;
+  box-shadow: 2px 2px 2px 2px #535252;
+}
+
+.post-comunidade {
+  width: 100%;
+  margin: auto;
+  background:whitesmoke;
+  border: solid #102739;
+  padding: 20px;
+  box-sizing: border-box;
+  box-shadow: 2px 2px 2px 2px #535252;
+}
+
+.text-image-container {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  
+}
+
+#comunidade p {
+  border: solid #102739;
+  padding: 20px;
+  margin: 20px;
+  flex: 2;
+  box-sizing: border-box;
+  min-width: 250px;
+  box-shadow: 2px 2px 2px 2px #535252;
+}
+
+#comunidade img {
+  width: 50%;
+  height: auto;
+  margin: 20px;
+  border: solid #102739;
+  padding: 20px;
+  box-sizing: border-box;
+  box-shadow: 2px 2px 2px 2px #535252;
+ 
+}
+
+.btn-link {
+  display: block;
+  text-align: center;
   font-size: 16px;
-  color: white;
-  clear: both;
-  background-color:  #102739;
   width: 160px;
   margin: 20px auto;
-  }
-.btn-link:hover{
-  box-shadow: 2px 2px 2px 2px #535252;
-  }
- 
-.post-comunidade img{
-  height: 400px;
-  width:  500px;
-  border: px solid   #102739;
+  border-radius: 3px;
   padding: 20px;
-  }
+  color: white;
+  background-color: #102739;
+  text-decoration: none;
+}
 
+.btn-link:hover {
+  box-shadow: 2px 2px 2px 2px #535252;
+}
 
 #artigos {
+  width: 100%;
+  margin: auto;
+  padding: 20px;
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
-  padding: 40px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0, 0.05);
-  }
+  align-items: center;
+}
+
+.artigos-header {
+  width: 100%;
+  max-width: 1245px;
+  text-align: center;
+  color: #102739;
+  background-color: whitesmoke;
+  border: solid #102739;
+  padding: 20px;
+  box-shadow: 2px 2px 2px 2px #535252;
+  box-sizing: border-box;
+}
 
 .artigos-container {
-  display:flex;
-  justify-content:center;
-  align-items: center;
-  margin: 20px 0px;
+  width: 100%;
+  max-width: 1245px;
+  background-color: whitesmoke;
+  border: solid #102739;
+  padding: 20px;
+  box-shadow: 2px 2px 2px 2px #535252;
+  display: flex;
   flex-wrap: wrap;
-  }
-
-  .artigos span {
-    color:  #102739;
-    }
+  justify-content: center;
+  gap: 20px;
+  box-sizing: border-box;
+}
 
 .artigos-box {
   width: 350px;
-  background-color: #102739;
-  border: 1px solid  black;
-  margin: 20px;
-  border-radius: 3px;
-  }
-
-.artigos-img {
-  width: 100%;
-  height: auto;
- 
-  }
+  background-color: whitesmoke;
+  border: solid #102739;
+  box-shadow: 4px 4px 4px 4px #535252;
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
 
 .artigos-img img {
   width: 100%;
-  height: 100%;
+  height: auto;
   object-fit: cover;
   object-position: center;
-  }
+}
 
 .artigos-text {
-  padding: 30px;
+  padding: 20px;
   display: flex;
   flex-direction: column;
-  }
+}
 
 .artigos-text span {
-  color: whitesmoke;
+  color: #102739;
   font-size: 0.9rem;
-  }
+  margin-bottom: 10px;
+}
 
 .artigos-text .artigos-title {
   font-size: 1.3rem;
   font-weight: 500;
-  color: white;
+  color: #102739;
+  margin-bottom: 10px;
 }
 
-.artigos-text .artigos-title :hover {
-  color: red;
-  transition: all ease 0.3s;
-  }
+.artigos-text .artigos-title:hover {
+  color: green;
+  transition: color 0.3s ease;
+}
 
 .artigos-text p {
-  color: white;
+  color: #102739;
   font-size: 0.9rem;
   display: -webkit-box;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
-  margin: 20px 0px;
-  }
+  margin-bottom: 10px;
+}
 
 .artigos-text a {
-  color:azure
-  }
+  color: #102739;
+  text-decoration: none;
+}
 
-.artigos-text a :hover {
-  color: red;
-  transition: all ease 0.3s;
-  }
+.artigos-text a:hover {
+  color: green;
+  transition: color 0.3s ease;
+}
 
 @media (max-width: 1250px) {
-.artigos-box {
-  width: 300px;
+  .artigos-box {
+    width: 300px;
   }
 }
+
 @media (max-width: 1100px) {
   .artigos-box {
     width: 70%;
-    }
   }
+}
+
 @media (max-width: 550px) {
   .artigos-box {
-    margin: 20px 10px;
     width: 100%;
-    }
+    margin: 10px 0;
+  }
   #artigos {
-    padding: 20px;
-    }
+    padding: 10px;
   }
-
-p {
-  text-align: left;
-  }
+}
 
 
+ 
 .footer {
  
     clear: both;

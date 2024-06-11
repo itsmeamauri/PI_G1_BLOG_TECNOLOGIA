@@ -76,7 +76,7 @@
     color: #102739;
   }
   
-  @media (max-width: 1020px) { /* escolhi esse tamanho para que o menu não fique 
+  @media (max-width: 1030px) { /* escolhi esse tamanho para que o menu não fique 
     com as palavras escritas uma a baixo da outra. Amauri Jr*/
     .menu {
       margin: auto;
@@ -115,12 +115,7 @@
     }
   }
   
-  /*
-  
-  a {
-      text-decoration: none;
-      color: inherit;
-  }*/
+ 
   
   
   
@@ -147,7 +142,7 @@
       float: left;
   }
   
-  .clearfix::after {
+  .clearfix:after {
       content: '';
       display: block;
       clear: both;
