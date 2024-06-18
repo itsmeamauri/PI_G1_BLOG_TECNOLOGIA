@@ -2,11 +2,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
   }
   
   body {
     font-family: "Poppins", sans-serif;
     background-color: beige;
+    align-items: center;
+    background-color: whitesmoke;
   }
   
   .branco {
@@ -124,13 +127,39 @@
    display: flexbox;
    justify-content: center;
    align-items: center;
-}
-.container p {
-    text-align: center; /*ESSE TEXTO FICARÁ DENTRO DO BANNER, NÃO SERÁ TAG. PS: Amauri Jr*/
+   
 }
 
 
-/*content clearfix não tem tag correspondente aqui*/
+/*#slide-1 {
+border-radius: 2px red
+;
+}
+
+
+.post{
+  align-items: center;
+  justify-content: center;
+  height:auto ;
+  width: 800px;
+}
+.recent-post-title h1 {
+ text-align: center;
+ ;
+
+}
+
+/*.post-image {
+background-color: blue;
+display: flex;
+height:100%;
+width:100% ;
+}
+.post-preview{
+background-color: red;
+align-items: center;
+
+}
 
 
 .comment-session {
@@ -155,10 +184,11 @@
     width: 38px;
     margin-right: 10px;
     border-radius: 50%;
+   
 }
 .comment-session .name {
     text-transform: uppercase; /* na página o primeiro e segundo nome estão um a baixo do outro, corrigir isso. ps: amauri */
-    font-weight: 500;
+  /*  font-weight: 500;
 }
 
 .post-comment .list .day {
@@ -169,6 +199,7 @@
 .post-comment .comment-post {
     padding: 0 0 15px 58px;
 }
+*/
 
 
 .comment-box {

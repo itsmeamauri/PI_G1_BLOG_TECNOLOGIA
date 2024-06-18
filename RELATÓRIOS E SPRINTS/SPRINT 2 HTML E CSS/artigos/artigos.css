@@ -119,13 +119,12 @@
   
 
   .post-preview a {
-color: #102739;
+color: black;
 
   }
   .recent-post-title{
     padding: 10px;
     text-align: center;
-    color: #102739;
   }
 
   .btn {
@@ -138,7 +137,7 @@ color: #102739;
 
 .btn:hover {
     color: white !important;
-    background: #102739;
+  
 }
 
 .content {
